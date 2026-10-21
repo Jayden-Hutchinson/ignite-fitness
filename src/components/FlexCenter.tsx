@@ -1,11 +1,11 @@
 type Props = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
 };
 
 function FlexCenter({ children, className }: Props) {
   return (
-    <div className={`flex items-center justify-center ${className}`}>
+    <div className={`flex min-w-0 items-center justify-center ${className}`}>
       {children}
     </div>
   );

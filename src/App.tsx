@@ -1,21 +1,23 @@
-import Home from "./components/Home";
-// import Projects from "./components/Projects";
-// import MouseArea from "./components/MouseArea";
-import StarBackground from "./components/StarBackground";
-import Viewport from "./components/Viewport";
-import World from "./components/World";
+import Hero from "./components/Hero";
+import Bio from "./components/Bio";
+import Footer from "./components/Footer";
+import Certifications from "./components/Certifications";
+import ProgramItems from "./components/ProgramItems";
+import Transformations from "./components/Transformations";
+import Story from "./components/Story";
 
 function App() {
   return (
-    <Viewport>
-      {/* <MouseArea /> */}
-
-      <World>
-        <StarBackground />
-        <Home />
-        {/* <Projects /> */}
-      </World>
-    </Viewport>
+    <>
+      {/* <Navbar /> */}
+      <Hero />
+      <Bio />
+      <Story />
+      <ProgramItems />
+      <Transformations />
+      <Certifications />
+      <Footer />
+    </>
   );
 }
 
