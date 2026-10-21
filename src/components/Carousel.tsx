@@ -4,26 +4,26 @@ type Props = {
   items: ReactNode[];
 };
 
-function CarouselButton({
-  icon,
-  onClick,
-  "aria-label": ariaLabel,
-}: {
-  icon: ReactNode;
-  onClick: () => void;
-  "aria-label": string;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-label={ariaLabel}
-      className="absolute top-1/2 right-3 size-7 -translate-y-1/2 cursor-pointer rounded-full bg-orange-500 text-white md:size-10 md:text-xl"
-    >
-      {icon}
-    </button>
-  );
-}
+// function CarouselButton({
+//   icon,
+//   onClick,
+//   "aria-label": ariaLabel,
+// }: {
+//   icon: ReactNode;
+//   onClick: () => void;
+//   "aria-label": string;
+// }) {
+//   return (
+//     <button
+//       type="button"
+//       onClick={onClick}
+//       aria-label={ariaLabel}
+//       className="absolute top-1/2 right-3 size-7 -translate-y-1/2 cursor-pointer rounded-full bg-orange-500 text-white md:size-10 md:text-xl"
+//     >
+//       {icon}
+//     </button>
+//   );
+// }
 
 function Carousel({ items }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0);
