@@ -43,19 +43,19 @@ export const PERSONAL_INFO = {
 export const CERTIFICATIONS: CertificationInfo[] = [
   {
     name: "Bachelor of Kinesiology",
-    src: "src/assets/images/ubc-certificate.jpg",
+    src: "/src/assets/images/ubc-certificate.jpg",
   },
   {
     name: "NCCA Certified Personal Trainer",
-    src: "src/assets/images/certified-personal-trainer.jpg",
+    src: "/src/assets/images/certified-personal-trainer.jpg",
   },
   {
     name: "NASM Certified Nutrition Coach",
-    src: "src/assets/images/certified-nutrition-coach.jpg",
+    src: "/src/assets/images/certified-nutrition-coach.jpg",
   },
   {
     name: "NASM Stretching and Flexibility Coach",
-    src: "src/assets/images/stretch-flexibility-coach.jpg",
+    src: "/src/assets/images/stretch-flexibility-coach.jpg",
   },
 ];
 

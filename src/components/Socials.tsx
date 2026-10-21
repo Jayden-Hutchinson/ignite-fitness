@@ -12,7 +12,7 @@ function Socials({ className }: Props) {
       className={`${className} z-1 items-center justify-center gap-8 text-white`}
     >
       {SOCIALS.map((contact) => (
-        <SocialLink {...contact} />
+        <SocialLink key={contact.link} {...contact} />
       ))}
     </FlexRow>
   );

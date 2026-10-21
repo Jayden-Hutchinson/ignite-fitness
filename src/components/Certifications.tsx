@@ -8,8 +8,8 @@ import Section from "./Section";
 type Props = {};
 
 function Certifications({}: Props) {
-  const items = CERTIFICATIONS.map((certification) => (
-    <Certification {...certification} />
+  const items = CERTIFICATIONS.map((certification, index) => (
+    <Certification key={index} {...certification} />
   ));
   return (
     <Section>
