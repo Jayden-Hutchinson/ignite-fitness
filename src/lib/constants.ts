@@ -6,6 +6,10 @@ import type {
 } from "./types";
 
 import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+import ubcCertificate from "../assets/images/ubc-certificate.jpg";
+import personalTrainer from "../assets/images/certified-personal-trainer.jpg";
+import nutritionCoach from "../assets/images/certified-nutrition-coach.jpg";
+import flexibilityCoach from "../assets/images/stretch-flexibility-coach.jpg";
 
 export const BUSINESS_INFO = {
   name: "Ignite Fitness",
@@ -43,19 +47,19 @@ export const PERSONAL_INFO = {
 export const CERTIFICATIONS: CertificationInfo[] = [
   {
     name: "Bachelor of Kinesiology",
-    src: "/src/assets/images/ubc-certificate.jpg",
+    src: ubcCertificate,
   },
   {
     name: "NCCA Certified Personal Trainer",
-    src: "/src/assets/images/certified-personal-trainer.jpg",
+    src: personalTrainer,
   },
   {
     name: "NASM Certified Nutrition Coach",
-    src: "/src/assets/images/certified-nutrition-coach.jpg",
+    src: nutritionCoach,
   },
   {
     name: "NASM Stretching and Flexibility Coach",
-    src: "/src/assets/images/stretch-flexibility-coach.jpg",
+    src: flexibilityCoach,
   },
 ];
 
