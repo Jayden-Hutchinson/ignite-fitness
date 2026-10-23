@@ -10,7 +10,7 @@ import FadeInGroup from "./FadeInGroup";
 
 function Hero() {
   return (
-    <FlexCenter className="relative min-h-screen w-full flex-col justify-evenly overflow-x-clip bg-cover bg-center px-10 pb-20">
+    <FlexCenter className="relative min-h-screen w-full flex-col justify-evenly overflow-x-clip bg-cover bg-center px-10 pb-30 md:pb-20">
       <Glow
         blur={200}
         opacity={0.5}
