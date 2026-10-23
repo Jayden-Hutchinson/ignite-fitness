@@ -10,7 +10,7 @@ export function useIsVisible<T extends HTMLElement>(
 ): boolean {
   const [isIntersecting, setIntersecting] = useState(false);
 
-  const { threshold = 0.8, rootMargin = "0px", triggerOnce = true } = options;
+  const { threshold = 0.5, rootMargin = "0px", triggerOnce = true } = options;
 
   useEffect(() => {
     const currentRef = ref.current;
