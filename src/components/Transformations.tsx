@@ -7,11 +7,26 @@ import result6 from "../assets/images/result-6.jpg";
 import result7 from "../assets/images/result-7.jpg";
 import Section from "./Section";
 import HighlightText from "./HighlightText";
+import Glow from "./Glow";
 type Props = {};
 
 function Transformations({}: Props) {
   return (
     <Section>
+      <Glow
+        size={500}
+        blur={200}
+        opacity={0.5}
+        className="bg-accent top-1/2 left-0 -translate-x-1/2 -translate-y-1/2"
+      />
+
+      <Glow
+        size={500}
+        blur={200}
+        opacity={0.5}
+        className="bg-accent top-1/2 right-0 translate-x-1/2 -translate-y-1/2"
+      />
+
       <div className="mb-16 flex w-full justify-center">
         <HighlightText
           text="3-Month Transformations"
