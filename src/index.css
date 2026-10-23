@@ -2,9 +2,13 @@
 
 @theme {
   --font-google-sans: "Google Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-manrope: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-heebo: "Heebo", ui-sans-serif, system-ui, sans-serif;
+
   --color-background: #000000;
   --color-primary: #000000;
   --color-secondary: #ffffff;
+  --color-accent: #fc5b21;
 
   --font-heading: "Barlow";
   --font-sans: "Roboto", sans-serif;
@@ -66,9 +70,14 @@ body {
   margin: 0;
   background-color: black;
   color: white;
+  overflow-x: hidden;
 }
 
 #root {
   margin: 0;
   padding: 0;
+}
+
+button {
+  cursor: pointer;
 }

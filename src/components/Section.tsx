@@ -5,7 +5,9 @@ type Props = {
 
 function Section({ children, className }: Props) {
   return (
-    <div className={`${className} px-[10vw] pt-50 md:px-[20vw] md:pt-100`}>
+    <div
+      className={`${className} relative overflow-x-clip px-[5vw] py-25 md:px-[10vw] md:py-50`}
+    >
       {children}
     </div>
   );

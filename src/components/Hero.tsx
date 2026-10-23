@@ -1,31 +1,35 @@
-import logo from "../assets/images/logo.png";
 import { CONSULTATION_INFO, HERO_TEXT } from "../lib/constants";
+import Glow from "./Glow";
 import FlexCenter from "./FlexCenter";
-import Link from "./Link";
+import Heading from "./Heading";
 import Socials from "./Socials";
+import SubHeading from "./SubHeading";
+import VideoThumbnail from "./VideoThumbnail";
+import CallToAction from "./CallToAction";
 
 function Hero() {
   return (
-    <FlexCenter className="bg-hero-sm md:bg-hero-md relative min-h-screen w-full flex-col justify-evenly bg-cover bg-center px-10 pb-20">
-      <div className="absolute inset-0 bg-black/80" />
-      <img
-        src={logo}
-        alt="Ignite Fitness Logo"
-        className="animate-fade-in w-50 md:w-100"
+    <FlexCenter className="relative min-h-screen w-full flex-col justify-evenly overflow-x-clip bg-cover bg-center px-10 pb-20">
+      <Glow
+        blur={200}
+        opacity={0.5}
+        className="bg-accent -top-1/2 size-120 md:size-200"
       />
-      <div className="animate-fade-in text-md text-center [animation-delay:500ms] md:text-xl">
-        {HERO_TEXT.heading}
-      </div>
 
-      <Link
-        href={CONSULTATION_INFO.href}
-        className="animate-fade-in [animation-delay:1000ms]"
-      >
-        <div className="font-google-sans rounded-lg bg-orange-500 px-5 py-3 font-bold md:px-6 md:py-4">
-          {CONSULTATION_INFO.text}
-        </div>
-      </Link>
-      <Socials className="animate-fade-in [animation-delay:1500ms]" />
+      <Heading>{HERO_TEXT.heading}</Heading>
+      <SubHeading>{HERO_TEXT.subHeading}</SubHeading>
+
+      <VideoThumbnail
+        videoId="ZnWdHE5PR8k"
+        title="How I Achieved My Dream Physique"
+        className="w-65 md:w-150"
+      />
+
+      <CallToAction href={CONSULTATION_INFO.href}>
+        {CONSULTATION_INFO.text}
+      </CallToAction>
+
+      <Socials />
     </FlexCenter>
   );
 }

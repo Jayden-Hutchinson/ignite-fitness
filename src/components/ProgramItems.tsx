@@ -4,6 +4,7 @@ import Flex from "./Flex";
 import ProgramItemList from "./ProgramItemList";
 import Section from "./Section";
 import HighlightText from "./HighlightText";
+import Glow from "./Glow";
 
 type Props = {};
 
@@ -14,6 +15,12 @@ function ProgramItems({}: Props) {
 
   return (
     <Section>
+      <Glow
+        blur={150}
+        opacity={0.5}
+        className="bg-accent top1/2 left-1/2 size-100 -translate-x-1/2 md:size-100"
+      />
+
       <Flex className="flex-col items-center gap-12">
         <HighlightText text="What's Included" className="justify-center" />
         <Flex className="items-center justify-center gap-8">

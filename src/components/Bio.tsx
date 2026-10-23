@@ -4,12 +4,19 @@ import FlexCenter from "./FlexCenter";
 import Section from "./Section";
 import portrait from "../assets/images/portrait.jpg";
 import HighlightText from "./HighlightText";
+import Glow from "./Glow";
 
 type Props = {};
 
 function Bio({}: Props) {
   return (
     <Section>
+      <Glow
+        blur={150}
+        opacity={0.5}
+        className="bg-accent left-0 size-75 -translate-x-1/2 md:size-100"
+      />
+
       <FlexCenter className="font-google-sans">
         <Flex className="w-full flex-col items-center gap-8 md:flex-row md:justify-evenly">
           <img

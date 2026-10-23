@@ -16,7 +16,9 @@ export const BUSINESS_INFO = {
 } as const;
 
 export const HERO_TEXT = {
-  heading: "Helping Men & Women build strong, aesthetic, & athletic physiques",
+  heading: "Your Transformation Starts Here",
+  subHeading:
+    "Helping Men & Women build strong, aesthetic, & athletic physiques",
 };
 
 export const CONSULTATION_INFO = {

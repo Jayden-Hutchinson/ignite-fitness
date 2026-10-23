@@ -6,6 +6,7 @@ import Section from "./Section";
 import miguelFlexing from "../assets/images/miguel-flex.png";
 import miguelYoung from "../assets/images/mig-young.jpg";
 import { useState } from "react";
+import Glow from "./Glow";
 
 type Props = {};
 
@@ -14,6 +15,12 @@ function Story({}: Props) {
 
   return (
     <Section>
+      <Glow
+        blur={150}
+        opacity={0.5}
+        className="bg-accent right-0 size-75 translate-x-1/2 md:size-100"
+      />
+
       <Flex className="items-center justify-evenly">
         <Flex className="flex-col items-center gap-8 md:w-1/3 md:items-start">
           <HighlightText text="My Story" />
