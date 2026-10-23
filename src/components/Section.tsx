@@ -5,7 +5,7 @@ type Props = {
 
 function Section({ children, className }: Props) {
   return (
-    <div className={`${className} px-[10vw] pt-100 md:px-[20vw]`}>
+    <div className={`${className} px-[10vw] pt-50 md:px-[20vw] md:pt-100`}>
       {children}
     </div>
   );
