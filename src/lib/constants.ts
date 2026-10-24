@@ -15,15 +15,19 @@ export const BUSINESS_INFO = {
   name: "Ignite Fitness",
 } as const;
 
-export const HERO_TEXT = {
+export const HERO_CONTENT = {
   heading: "Your Transformation Starts Here",
   subHeading:
     "Helping Men & Women build strong, aesthetic, & athletic physiques",
+  videoId: "ZnWdHE5PR8k",
+  videoTitle: "How I Achieved My Dream Physique",
 };
 
 export const CONSULTATION_INFO = {
   text: "Book a Consultation",
+  textShort: "Book a Call",
   href: "https://calendly.com/ignitefitness-mh/45-minute-strategy-call",
+  subText: "No Comitment. 45-minute call.",
 };
 
 export const BIO_PARAGRAPHS: string[] = [

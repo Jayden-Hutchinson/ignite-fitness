@@ -26,13 +26,13 @@ function ProgramItems({}: Props) {
         <Flex className="items-center justify-center gap-8">
           <button
             onClick={() => setTab("features")}
-            className={`cursor-pointer rounded-full border-2 px-3 py-2 ${tab === "features" ? "border-orange-500 bg-orange-500" : ""}`}
+            className={`cursor-pointer rounded-full border-2 px-6 py-2 ${tab === "features" ? "border-orange-500 bg-orange-500" : ""}`}
           >
             Features
           </button>
           <button
             onClick={() => setTab("bonuses")}
-            className={`cursor-pointer rounded-full border-2 px-3 py-2 ${tab === "bonuses" ? "border-orange-500 bg-orange-500" : ""}`}
+            className={`cursor-pointer rounded-full border-2 px-6 py-2 ${tab === "bonuses" ? "border-orange-500 bg-orange-500" : ""}`}
           >
             Bonuses
           </button>

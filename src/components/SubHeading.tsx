@@ -5,7 +5,11 @@ type Props = {
 };
 
 function SubHeading({ children }: Props) {
-  return <div className="font-heebo text-center md:text-xl">{children}</div>;
+  return (
+    <div className="font-heebo text-md text-center text-neutral-300 md:text-xl">
+      {children}
+    </div>
+  );
 }
 
 export default SubHeading;
