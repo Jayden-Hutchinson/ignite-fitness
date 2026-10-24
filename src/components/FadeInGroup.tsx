@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import FlexCenter from "./FlexCenter";
 
 type Props = {
   children: ReactNode;
@@ -14,7 +15,7 @@ function FadeInGroup({
   className = "",
 }: Props) {
   return (
-    <>
+    <FlexCenter className={`flex-col ${className}`}>
       {Children.toArray(children).map((child, index) => (
         <div
           key={index}
@@ -24,7 +25,7 @@ function FadeInGroup({
           {child}
         </div>
       ))}
-    </>
+    </FlexCenter>
   );
 }
 

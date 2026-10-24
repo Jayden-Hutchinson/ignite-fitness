@@ -19,7 +19,7 @@ function Navbar({}: Props) {
         href={CONSULTATION_INFO.href}
         className="border-accent hover:bg-accent font-heebo text-accent hidden rounded-full border px-5 py-1 hover:text-white md:block"
       >
-        {CONSULTATION_INFO.text}
+        {CONSULTATION_INFO.textShort}
       </Link>
       {/* <div className="md:hidden">
         <RxHamburgerMenu />
