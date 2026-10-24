@@ -1,5 +1,4 @@
 import { Children, type ReactNode } from "react";
-import Flex from "./Flex";
 import FlexCenter from "./FlexCenter";
 
 type Props = {
