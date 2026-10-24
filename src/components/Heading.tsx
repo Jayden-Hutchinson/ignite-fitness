@@ -14,7 +14,7 @@ function Heading({ children, highlight, className = "" }: Props) {
   const parts = children.split(new RegExp(`(${escapeRegExp(highlight)})`, "i"));
   return (
     <h1
-      className={`font-manrope text-center text-2xl font-bold md:text-6xl ${className}`}
+      className={`font-manrope text-center text-3xl font-bold md:text-6xl ${className}`}
     >
       {parts.map((part, i) =>
         part.toLowerCase() === highlight.toLowerCase() ? (
